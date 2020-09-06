@@ -33,5 +33,5 @@ def ddi_drug_feature(drugbank_id_file,drugbank_info_file, feature_id_file):
         for t in range(0,no_of_drugs):
             if feature_dict[q] in temp_arr[drug_dict[t]][0]:
                 feature_drug[t][q] = 1
-    return(adj_matrix_ddi,feature_drug)
+    return(adj_matrix_ddi,feature_drug,drug_dict)
     
